@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ES2015</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			// JavaScript
+			var name = "Josue";
+			var text = "Este es un " + name + " texto muy largo";
+			console.log(texto);
+			// ES2015
+			const name = "Josue";
+			let texto = `Es es un texto largo el nombre es: ${name}`;
+			console.log(texto);
+			const names = ["Josue", "Alan", "Jose"];
+			let texto = `
+				Es es un texto largo el nombre es:
+				<ul>
+					${
+						names.map( name => `<li>${name}</li>` ).join('')
+					}
+				</ul>
+			`;
+			console.log(texto);
+		</script>
+	</body>
+</html>

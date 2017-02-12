@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ES2015</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script>
+			// let
+			{
+				let texto = "Josue";
+				{
+					let texto = "Gerardo";
+					console.log(texto);
+				}
+				console.log(texto);
+			}
+			// Ejemplo
+			for ( let i = 0; i <= 10; i++ ) {
+				setTimeout(
+					function () {
+						console.log(i);
+					},
+					100
+				)
+			}
+			// const - Recomendado cuando vamos a usar valores específicos y que no van a cambiar
+			const text = "Josue";
+			texto = "Alejandro"; // Error
+		</script>
+	</body>
+</html>
